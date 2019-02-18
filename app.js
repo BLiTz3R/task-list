@@ -1,6 +1,7 @@
 // Define UI vars
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
+const taskItem = document.querySelector('.collection-item');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
@@ -20,7 +21,7 @@ function loadEventListeners() {
     // Filter tasks event
     filter.addEventListener('keyup', filterTasks);
     // Mark task as done event
-    taskList.addEventListener("click", taskIsDone);
+    taskItem.addEventListener("click", taskIsDone);
 }
 
 // Get tasks from localStorage
