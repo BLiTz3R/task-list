@@ -164,3 +164,8 @@ function filterTasks(e) {
         }
     });
 }
+
+// Strike-through selected task
+function taskIsDone(e) {
+	e.target.classList.toggle("done");
+}
