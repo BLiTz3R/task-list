@@ -53,10 +53,7 @@ function getTasks() {
 
 // Add task
 function addTask(e) {
-    if (taskInput.value === '') {
-        alert('Add a task');
-        
-    } else {
+    if (taskInput.value.trim() !== '') {
         // Create li element
         const li = document.createElement('li');
         // Add class for materialize
@@ -81,6 +78,9 @@ function addTask(e) {
         // Clear input
         taskInput.value = '';
 
+        e.preventDefault();
+    } else {
+        alert('Add a task');
         e.preventDefault();
     }
 }
