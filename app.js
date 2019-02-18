@@ -21,7 +21,7 @@ function loadEventListeners() {
     // Filter tasks event
     filter.addEventListener('keyup', filterTasks);
     // Mark task as done event
-    taskItem.addEventListener("click", taskIsDone);
+    taskList.addEventListener("click", taskIsDone);
 }
 
 // Get tasks from localStorage
