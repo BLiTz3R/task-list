@@ -1,5 +1,5 @@
 # task-list
-A simple task list, project in progress...
+A simple JS task list, project in progress...
 
 JS project, using various eventListeners and localStorage. User can add a task, delete a task, clear the whole list, mark a task as "done" by clicking on it, the list persists through reloads and browser restarts. 
 
