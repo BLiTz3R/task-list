@@ -53,6 +53,7 @@ function getTasks() {
 
 // Add task
 function addTask(e) {
+    // Check if input is blank or white spaces only
     if (taskInput.value.trim() !== '') {
         // Create li element
         const li = document.createElement('li');
